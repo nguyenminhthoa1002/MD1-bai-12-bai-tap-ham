@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính giai thừa của một số nguyên</h1>
+<input type="text" id="nhap" placeholder="Nhập số">
+<button onclick="tinh()">Tính</button>
+<p id="hienThi"></p>
+<script>
+    function tinh() {
+        let so= +document.getElementById("nhap").value;
+        let b= 1
+        for (let i = 1; i <=so; i++) {
+            b *= i
+        }
+    document.getElementById('hienThi').innerHTML="Giai thừa của "+so+" là: "+ b
+    }
+</script>
+</body>
+</html>

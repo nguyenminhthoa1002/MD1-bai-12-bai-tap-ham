@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính bình phương</h1>
+<input type="text" id="nhap">
+<button onclick="tinhBinhPhuong()">Tính</button>
+<p id="hienThi"></p>
+<script>
+function tinhBinhPhuong() {
+    let so= +document.getElementById("nhap").value;
+    console.log(so)
+    let b=Math.pow(so,2)
+    document.getElementById('hienThi').innerHTML="Bình phương của " +so+" là: " + b
+}
+</script>
+</body>
+</html>

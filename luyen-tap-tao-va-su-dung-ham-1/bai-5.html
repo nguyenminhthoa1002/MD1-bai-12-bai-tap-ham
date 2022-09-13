@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Kiểm tra chòm sao</h1>
+<input type="text" id="nhap">
+<button onclick="saoTuongUng()">Check</button>
+<p id="hienThi"></p>
+<script>
+    let array1=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
+    let array2=["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"]
+
+    function saoTuongUng() {
+        let nhapTen=document.getElementById('nhap').value;
+        for (let i = 0; i < array1.length; i++) {
+            if (nhapTen===array1[i]) {
+                document.getElementById('hienThi').innerHTML="Tên chòm sao của " + nhapTen + " là: " + array2[i]
+                break;
+            } else {
+                document.getElementById('hienThi').innerHTML="Not found!!!"
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

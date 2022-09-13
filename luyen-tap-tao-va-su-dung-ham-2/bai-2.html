@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính diện tích, hàm tính chu vi hình tròn</h1>
+<input type="text" id="nhap" placeholder="Nhập bán kính">
+<button onclick="tinh()">Tính</button>
+<p id="chuVi"></p>
+<p id="dienTich"></p>
+<script>
+    function tinh() {
+        let banKinh= +document.getElementById("nhap").value;
+        let chuVi=2*banKinh*Math.PI
+        document.getElementById('chuVi').innerHTML="Chu vi là: " + chuVi
+        let dienTich=banKinh*banKinh*Math.PI
+        document.getElementById('dienTich').innerHTML="Diện tích là: " + dienTich
+    }
+</script>
+</body>
+</html>

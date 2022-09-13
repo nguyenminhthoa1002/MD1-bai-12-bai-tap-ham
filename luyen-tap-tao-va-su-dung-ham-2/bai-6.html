@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Kiểm tra xem số đưa vào có phải là nguyên dương không</h1>
+<input type="text" id="nhap">
+<button onclick="check()">Check</button>
+<p id="hienThi"></p>
+<script>
+    function check(){
+        let so= +document.getElementById('nhap').value;
+        if(so>0 && Number.isInteger(so)) {
+            document.getElementById('hienThi').innerHTML=`${so} là số nguyên dương`
+        } else {
+            document.getElementById('hienThi').innerHTML=`${so} không là số nguyên dương`
+        }
+    }
+</script>
+</body>
+</html>
